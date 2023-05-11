@@ -4,8 +4,16 @@ import { Component } from '@angular/core';
   selector: 'shared-sidebar',
   templateUrl: './sidebar.component.html',
   styles: [
-  ]
-})
-export class SidebarComponent {
+    `
+      li {
+        cursor: pointer;
+      }
 
-}
+      li:hover {
+        background-color: #0d6efd;
+        color: white;
+      }
+    `
+  ],
+})
+export class SidebarComponent {}
